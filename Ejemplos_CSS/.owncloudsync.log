@@ -1,0 +1,197 @@
+#=#=#=# Syncrun started 2020-10-20T08:58:30Z
+#=#=#=#=# Propagation starts 2020-10-20T08:58:30Z (last step: 97 msec, total: 97 msec)
+#=#=#=# Syncrun finished 2020-10-20T08:58:30Z (last step: 14 msec, total: 112 msec)
+#=#=#=# Syncrun started 2020-10-20T10:38:54Z
+#=#=#=#=# Propagation starts 2020-10-20T10:38:55Z (last step: 573 msec, total: 573 msec)
+10:38:00||Ejemplos|INST_NEW|Up|1603190249||0|22379937oc0aeoh88i4k|4||201|0|0|d845ff5d-0b38-442f-8eca-0e5682672d87|
+10:38:00||Ejemplos/css|INST_NEW|Up|1603190249||0|22379938oc0aeoh88i4k|4||201|0|0|dca49d74-13a0-4314-89f4-20a4d436f001|
+10:38:01||Ejemplos/img|INST_NEW|Up|1603190249||0|22379939oc0aeoh88i4k|4||201|0|0|714841bb-04e2-4748-afb3-11cc8757579d|
+10:38:01||Ejemplos/css/ejemplo1.css|INST_NEW|Up|1603091662|60ba4480ee0925600936f0a820c39f46|268|22379940oc0aeoh88i4k|4||201|0|0|e5cffb99-62b2-4b67-95bc-e31a838b2284|
+10:38:01||Ejemplos/css/ejemplo2.css|INST_NEW|Up|1603094597|c6adc6a8d7113cff9206ff575f1abbd2|338|22379941oc0aeoh88i4k|4||201|0|0|e720170a-5a32-439f-9b79-254d14885099|
+10:38:01||Ejemplos/Ejemplo1.html|INST_NEW|Up|1603091653|19773a2f2a422d49da33ec69407bde1b|555|22379942oc0aeoh88i4k|4||201|0|0|052041ca-d97a-4a82-b800-8a45fc055db1|
+10:38:01||Ejemplos/Ejemplo2.html|INST_NEW|Up|1603094526|8afe8a05c9ee6a95f83cf377d98c7980|540|22379943oc0aeoh88i4k|4||201|0|0|305cbfe3-0287-4fc6-98d2-2bcd0190d211|
+#=#=#=# Syncrun finished 2020-10-20T10:38:56Z (last step: 1138 msec, total: 1711 msec)
+#=#=#=# Syncrun started 2020-10-20T10:39:01Z
+#=#=#=# Syncrun finished 2020-10-20T10:39:10Z (last step: 9264 msec, total: 9264 msec)
+#=#=#=# Syncrun started 2020-10-20T10:39:15Z
+#=#=#=#=# Propagation starts 2020-10-20T10:39:16Z (last step: 1119 msec, total: 1119 msec)
+||Ejemplos|INST_NEW|Down|1603190281|5f8ebe0997df2|0|22379937oc0aeoh88i4k|4||0|0|0||
+||Ejemplos/css|INST_NEW|Down|1603190281|5f8ebe09767c2|0|22379938oc0aeoh88i4k|4||0|0|0||
+||Ejemplos/img|INST_NEW|Down|1603190281|5f8ebe094c932|0|22379939oc0aeoh88i4k|4||0|0|0||
+10:38:21||Ejemplos/css/ejemplo1.css|INST_NEW|Down|1603091662|60ba4480ee0925600936f0a820c39f46|268|22379940oc0aeoh88i4k|4||200|0|0|71e825ce-d01d-4980-8d9d-bf220d99f8fd|
+10:38:22||Ejemplos/css/ejemplo2.css|INST_NEW|Down|1603094597|c6adc6a8d7113cff9206ff575f1abbd2|338|22379941oc0aeoh88i4k|4||200|0|0|4bda521f-3229-455a-91d4-a8d4252aa9f8|
+10:38:22||Ejemplos/Ejemplo2.html|INST_NEW|Down|1603094526|8afe8a05c9ee6a95f83cf377d98c7980|540|22379943oc0aeoh88i4k|4||200|0|0|e6986e5b-d1a2-404e-a6a0-d7a26562402c|
+10:38:22||Ejemplos/Ejemplo1.html|INST_NEW|Down|1603091653|19773a2f2a422d49da33ec69407bde1b|555|22379942oc0aeoh88i4k|4||200|0|0|233edbe8-e344-43c8-af7d-cdc0ab772a89|
+10:38:22||img|INST_NEW|Up|1603190249||0|22379968oc0aeoh88i4k|4||201|0|0|3c5f4305-2264-4262-b3d5-ddb2234436fb|
+10:38:22||Ejemplo2.html|INST_NEW|Up|1603094526|642d58b5458ab0cdcd5e6cb21941368a|540|22379969oc0aeoh88i4k|4||201|0|0|2edf1a66-32eb-47ca-bf4d-cbe7bd94f4c6|
+10:38:22||Ejemplo1.html|INST_NEW|Up|1603091653|673779b70a1f8e13b80cc9421bdb55c3|555|22379970oc0aeoh88i4k|4||201|0|0|6369bf4b-e55c-43be-b697-65f7ab36fbf2|
+10:38:22||css|INST_NEW|Up|1603190249||0|22379971oc0aeoh88i4k|4||201|0|0|af2a0eed-304e-4a49-ad70-ec8245d5712e|
+10:38:22||css/ejemplo1.css|INST_NEW|Up|1603091662|d9a7c78ba4e60d1e0c7f2ab17ecf670d|268|22379972oc0aeoh88i4k|4||201|0|0|f98e5071-376d-476b-9ae0-c72fc4de3803|
+10:38:22||css/ejemplo2.css|INST_NEW|Up|1603094597|9151a3d6e98cf6959c4fdce048bb646b|338|22379973oc0aeoh88i4k|4||201|0|0|e66c5468-c452-4f79-a5d3-09a9c63f3011|
+#=#=#=# Syncrun finished 2020-10-20T10:39:17Z (last step: 603 msec, total: 1722 msec)
+#=#=#=# Syncrun started 2020-10-20T10:39:19Z
+#=#=#=#=# Propagation starts 2020-10-20T10:39:20Z (last step: 780 msec, total: 780 msec)
+#=#=#=# Syncrun finished 2020-10-20T10:39:20Z (last step: 13 msec, total: 793 msec)
+#=#=#=# Syncrun started 2020-10-20T10:41:27Z
+#=#=#=#=# Propagation starts 2020-10-20T10:41:28Z (last step: 393 msec, total: 393 msec)
+10:40:33||Ejemplos|INST_REMOVE|Up|1603190281|5f8ebe0997df2|0|22379937oc0aeoh88i4k|4||204|0|1603190281|17956d9f-226e-4195-ac64-9c73e7dbf57b|
+#=#=#=# Syncrun finished 2020-10-20T10:41:28Z (last step: 163 msec, total: 557 msec)
+#=#=#=# Syncrun started 2020-10-20T10:42:03Z
+#=#=#=#=# Propagation starts 2020-10-20T10:42:04Z (last step: 387 msec, total: 387 msec)
+#=#=#=# Syncrun finished 2020-10-20T10:42:04Z (last step: 11 msec, total: 398 msec)
+#=#=#=# Syncrun started 2020-10-20T11:00:22Z
+#=#=#=#=# Propagation starts 2020-10-20T11:00:22Z (last step: 412 msec, total: 412 msec)
+10:59:23||Ejemplo3.html|INST_NEW|Up|1603191532|3fac36668a3d5c77c558c3df4b4523e0|0|22381471oc0aeoh88i4k|4||201|0|0|6c5c8a95-dfd1-4d66-bc89-ab869477a8fb|
+#=#=#=# Syncrun finished 2020-10-20T11:00:23Z (last step: 226 msec, total: 639 msec)
+#=#=#=# Syncrun started 2020-10-20T11:00:37Z
+#=#=#=#=# Propagation starts 2020-10-20T11:00:38Z (last step: 358 msec, total: 358 msec)
+10:59:38||css/ejemplo3.css|INST_NEW|Up|1603191547|f4765f0af0ba5df99d3c784190a5341c|0|22381489oc0aeoh88i4k|4||201|0|0|335307e0-8e26-45e7-8eab-d202ae434ac5|
+#=#=#=# Syncrun finished 2020-10-20T11:00:38Z (last step: 124 msec, total: 482 msec)
+#=#=#=# Syncrun started 2020-10-20T11:01:05Z
+#=#=#=#=# Propagation starts 2020-10-20T11:01:18Z (last step: 12803 msec, total: 12803 msec)
+11:00:19||Ejemplo3.html|INST_SYNC|Up|1603191583|3be076509c16390ba052a40309f05539|335|22381471oc0aeoh88i4k|4||204|0|1603191532|b8956185-17bf-4a00-b030-5a4cc148fd43|
+#=#=#=# Syncrun finished 2020-10-20T11:01:19Z (last step: 224 msec, total: 13027 msec)
+#=#=#=# Syncrun started 2020-10-20T11:01:24Z
+#=#=#=#=# Propagation starts 2020-10-20T11:01:25Z (last step: 719 msec, total: 719 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:01:25Z (last step: 15 msec, total: 735 msec)
+#=#=#=# Syncrun started 2020-10-20T11:01:32Z
+#=#=#=#=# Propagation starts 2020-10-20T11:01:33Z (last step: 426 msec, total: 426 msec)
+11:00:33||css/ejemplo3.css|INST_SYNC|Up|1603191602|a8b1faa40fdac2fd54fc44820be176c3|63|22381489oc0aeoh88i4k|4||204|0|1603191547|a9b693b2-e70a-42de-996d-6e4351e045e0|
+#=#=#=# Syncrun finished 2020-10-20T11:01:33Z (last step: 145 msec, total: 572 msec)
+#=#=#=# Syncrun started 2020-10-20T11:02:19Z
+#=#=#=#=# Propagation starts 2020-10-20T11:02:20Z (last step: 1008 msec, total: 1008 msec)
+11:01:20||css/ejemplo3.css|INST_SYNC|Up|1603191648|f87f635b5d6bccfffd5ebba02ccbab52|79|22381489oc0aeoh88i4k|4||204|63|1603191602|97f568de-e4dc-426d-9436-6d5a744212f6|
+#=#=#=# Syncrun finished 2020-10-20T11:02:20Z (last step: 296 msec, total: 1304 msec)
+#=#=#=# Syncrun started 2020-10-20T11:02:26Z
+#=#=#=#=# Propagation starts 2020-10-20T11:02:27Z (last step: 777 msec, total: 777 msec)
+11:01:27||css/ejemplo3.css|INST_SYNC|Up|1603191656|1eb94a51c225f5527574d6d72fd469da|80|22381489oc0aeoh88i4k|4||204|79|1603191648|129a9ccf-d197-4f2f-a3c9-193fec99d525|
+#=#=#=# Syncrun finished 2020-10-20T11:02:27Z (last step: 178 msec, total: 955 msec)
+#=#=#=# Syncrun started 2020-10-20T11:02:53Z
+#=#=#=#=# Propagation starts 2020-10-20T11:02:54Z (last step: 712 msec, total: 712 msec)
+11:01:54||css/ejemplo3.css|INST_SYNC|Up|1603191683|a3635f96262ce549b62e249b5adcd4f9|124|22381489oc0aeoh88i4k|4||204|80|1603191656|e56a3772-7f88-4e76-9ac3-33a4fe79d837|
+#=#=#=# Syncrun finished 2020-10-20T11:02:54Z (last step: 172 msec, total: 885 msec)
+#=#=#=# Syncrun started 2020-10-20T11:02:59Z
+#=#=#=#=# Propagation starts 2020-10-20T11:02:59Z (last step: 188 msec, total: 188 msec)
+11:01:59||css/ejemplo3.css|INST_SYNC|Up|1603191688|09dca03ab211081357b45d8b3a57c3f4|124|22381489oc0aeoh88i4k|4||204|124|1603191683|23d443c2-2bf7-47c6-90a9-17d468781313|
+#=#=#=# Syncrun finished 2020-10-20T11:02:59Z (last step: 201 msec, total: 389 msec)
+#=#=#=# Syncrun started 2020-10-20T11:03:30Z
+#=#=#=#=# Propagation starts 2020-10-20T11:03:31Z (last step: 863 msec, total: 863 msec)
+11:02:31||Ejemplo3.html|INST_SYNC|Up|1603191720|02e742a551ed4c0e15499b5c06ba6ba6|551|22381471oc0aeoh88i4k|4||204|335|1603191583|23580fbb-89db-4dd6-9d8c-5bc21298ac3b|
+#=#=#=# Syncrun finished 2020-10-20T11:03:31Z (last step: 217 msec, total: 1080 msec)
+#=#=#=# Syncrun started 2020-10-20T11:04:04Z
+#=#=#=#=# Propagation starts 2020-10-20T11:04:04Z (last step: 406 msec, total: 406 msec)
+11:03:04||Ejemplo3.html|INST_SYNC|Up|1603191754|dcad171fbbb2a52910fdbd572c3b7e90|402|22381471oc0aeoh88i4k|4||204|551|1603191720|98b7b8b7-513b-48e1-9d13-85413193d7d4|
+#=#=#=# Syncrun finished 2020-10-20T11:04:04Z (last step: 178 msec, total: 585 msec)
+#=#=#=# Syncrun started 2020-10-20T11:04:05Z
+#=#=#=#=# Propagation starts 2020-10-20T11:04:05Z (last step: 103 msec, total: 103 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:04:05Z (last step: 11 msec, total: 114 msec)
+#=#=#=# Syncrun started 2020-10-20T11:04:38Z
+#=#=#=#=# Propagation starts 2020-10-20T11:04:38Z (last step: 367 msec, total: 367 msec)
+11:03:39||Ejemplo3.html|INST_SYNC|Up|1603191788|6e3519fbb5c9384505ec416414db825e|417|22381471oc0aeoh88i4k|4||204|402|1603191754|84e7e198-60d7-4d64-92f9-5122454fe0fd|
+#=#=#=# Syncrun finished 2020-10-20T11:04:39Z (last step: 176 msec, total: 543 msec)
+#=#=#=# Syncrun started 2020-10-20T11:04:51Z
+#=#=#=#=# Propagation starts 2020-10-20T11:04:51Z (last step: 410 msec, total: 410 msec)
+11:03:52||css/ejemplo3.css|INST_SYNC|Up|1603191801|28adc8cd617d4e4861e99e27d60a3ef3|160|22381489oc0aeoh88i4k|4||204|124|1603191688|c403fcca-5803-4c0a-9f79-3dc8dbbae315|
+#=#=#=# Syncrun finished 2020-10-20T11:04:52Z (last step: 224 msec, total: 635 msec)
+#=#=#=# Syncrun started 2020-10-20T11:05:11Z
+#=#=#=#=# Propagation starts 2020-10-20T11:05:12Z (last step: 753 msec, total: 753 msec)
+11:04:12||Ejemplo3.html|INST_SYNC|Up|1603191820|c4aff344c9eb0f30b12743182f79dabd|417|22381471oc0aeoh88i4k|4||204|417|1603191788|70d6ce3b-3b13-4eb4-957b-d92769adbacc|
+#=#=#=# Syncrun finished 2020-10-20T11:05:12Z (last step: 225 msec, total: 978 msec)
+#=#=#=# Syncrun started 2020-10-20T11:05:29Z
+#=#=#=#=# Propagation starts 2020-10-20T11:05:29Z (last step: 333 msec, total: 333 msec)
+11:04:30||css/ejemplo3.css|INST_SYNC|Up|1603191839|734038895d2de5678bbc03a1c06246d7|161|22381489oc0aeoh88i4k|4||204|160|1603191801|9ab8d00d-d08e-4fc9-a2a8-6f81cd2cf902|
+#=#=#=# Syncrun finished 2020-10-20T11:05:30Z (last step: 172 msec, total: 505 msec)
+#=#=#=# Syncrun started 2020-10-20T11:05:38Z
+#=#=#=#=# Propagation starts 2020-10-20T11:05:39Z (last step: 816 msec, total: 816 msec)
+11:04:39||css/ejemplo3.css|INST_SYNC|Up|1603191847|a309695a14180b98920e8101d2199d01|161|22381489oc0aeoh88i4k|4||204|161|1603191839|ad9febe4-c0c0-4cde-99ce-bf29b56381f7|
+#=#=#=# Syncrun finished 2020-10-20T11:05:39Z (last step: 194 msec, total: 1010 msec)
+#=#=#=# Syncrun started 2020-10-20T11:05:47Z
+#=#=#=#=# Propagation starts 2020-10-20T11:05:47Z (last step: 792 msec, total: 792 msec)
+11:04:48||css/ejemplo3.css|INST_SYNC|Up|1603191856|48f75ca37d403feedcab500d788e8ab8|161|22381489oc0aeoh88i4k|4||204|161|1603191847|6a935f30-85ae-4d01-9606-ffb2e328d63b|
+#=#=#=# Syncrun finished 2020-10-20T11:05:48Z (last step: 235 msec, total: 1027 msec)
+#=#=#=# Syncrun started 2020-10-20T11:05:58Z
+#=#=#=#=# Propagation starts 2020-10-20T11:05:59Z (last step: 799 msec, total: 799 msec)
+11:04:59||Ejemplo3.html|INST_SYNC|Up|1603191868|5991548073d085e4562f2ff53af896fc|546|22381471oc0aeoh88i4k|4||204|417|1603191820|efdfadcb-e35e-4359-8e47-23514236914c|
+#=#=#=# Syncrun finished 2020-10-20T11:05:59Z (last step: 232 msec, total: 1032 msec)
+#=#=#=# Syncrun started 2020-10-20T11:06:34Z
+#=#=#=#=# Propagation starts 2020-10-20T11:06:34Z (last step: 368 msec, total: 368 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:06:34Z (last step: 10 msec, total: 379 msec)
+#=#=#=# Syncrun started 2020-10-20T11:06:41Z
+#=#=#=#=# Propagation starts 2020-10-20T11:06:41Z (last step: 713 msec, total: 713 msec)
+11:05:42||css/ejemplo3.css|INST_SYNC|Up|1603191910|2aa0923d90757a2744dfa1a44b80dd6d|181|22381489oc0aeoh88i4k|4||204|161|1603191856|53d8cbdc-392f-4e4e-8070-040dd1938cbd|
+#=#=#=# Syncrun finished 2020-10-20T11:06:42Z (last step: 376 msec, total: 1089 msec)
+#=#=#=# Syncrun started 2020-10-20T11:06:52Z
+#=#=#=#=# Propagation starts 2020-10-20T11:06:53Z (last step: 704 msec, total: 704 msec)
+11:05:53||css/ejemplo3.css|INST_SYNC|Up|1603191922|62fbaa2f4aa0c3297473bd18b284755e|181|22381489oc0aeoh88i4k|4||204|181|1603191910|4cd77c78-1a80-417f-b789-4921dd024a67|
+#=#=#=# Syncrun finished 2020-10-20T11:06:53Z (last step: 185 msec, total: 889 msec)
+#=#=#=# Syncrun started 2020-10-20T11:07:02Z
+#=#=#=#=# Propagation starts 2020-10-20T11:07:03Z (last step: 637 msec, total: 637 msec)
+11:06:03||css/ejemplo3.css|INST_SYNC|Up|1603191932|f5fc4248a9f67db279c9127c82b71e3e|179|22381489oc0aeoh88i4k|4||204|181|1603191922|d55eb94d-8ff6-4bc2-a631-186b6e2f5897|
+#=#=#=# Syncrun finished 2020-10-20T11:07:03Z (last step: 164 msec, total: 801 msec)
+#=#=#=# Syncrun started 2020-10-20T11:08:02Z
+#=#=#=#=# Propagation starts 2020-10-20T11:08:03Z (last step: 702 msec, total: 702 msec)
+11:07:03||Ejemplo3.html|INST_SYNC|Up|1603191991|2adab8f2592f9c399ad29d33c5548355|546|22381471oc0aeoh88i4k|4||204|546|1603191868|df9a3f54-3ea7-486a-a267-0c44e5235794|
+#=#=#=# Syncrun finished 2020-10-20T11:08:03Z (last step: 433 msec, total: 1136 msec)
+#=#=#=# Syncrun started 2020-10-20T11:08:09Z
+#=#=#=#=# Propagation starts 2020-10-20T11:08:10Z (last step: 867 msec, total: 867 msec)
+11:07:10||css/ejemplo3.css|INST_SYNC|Up|1603191998|50fc3a44dbb9251338261b1397f22c64|180|22381489oc0aeoh88i4k|4||204|179|1603191932|74b676ec-f822-46df-87da-f035f686d2b7|
+#=#=#=# Syncrun finished 2020-10-20T11:08:10Z (last step: 610 msec, total: 1477 msec)
+#=#=#=# Syncrun started 2020-10-20T11:08:02Z
+#=#=#=#=# Propagation starts 2020-10-20T11:08:03Z (last step: 809 msec, total: 809 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:08:03Z (last step: 28 msec, total: 837 msec)
+#=#=#=# Syncrun started 2020-10-20T11:08:44Z
+#=#=#=#=# Propagation starts 2020-10-20T11:08:44Z (last step: 787 msec, total: 787 msec)
+11:08:46||Ejemplo3.html|INST_SYNC|Up|1603192095|f7206d02847262d6954dba3f42645ab5|564|22381471oc0aeoh88i4k|4||204|546|1603191991|8cffe8eb-f51f-4f3a-954f-f941d34512ec|
+#=#=#=# Syncrun finished 2020-10-20T11:08:45Z (last step: 736 msec, total: 1524 msec)
+#=#=#=# Syncrun started 2020-10-20T11:08:54Z
+#=#=#=#=# Propagation starts 2020-10-20T11:08:54Z (last step: 689 msec, total: 689 msec)
+11:08:56||css/ejemplo3.css|INST_SYNC|Up|1603192105|705a18d53ebc466dd3605b2a58c1acf8|221|22381489oc0aeoh88i4k|4||204|180|1603191998|ad1aaf15-b2d1-4a43-a40b-1d2101ea3f39|
+#=#=#=# Syncrun finished 2020-10-20T11:08:55Z (last step: 401 msec, total: 1090 msec)
+#=#=#=# Syncrun started 2020-10-20T11:08:57Z
+#=#=#=#=# Propagation starts 2020-10-20T11:08:58Z (last step: 1661 msec, total: 1661 msec)
+11:09:00||Ejemplo3.html|INST_SYNC|Up|1603192107|85eb66cb5f7487eabdc9bc8e3d74c466|564|22381471oc0aeoh88i4k|4||204|564|1603192095|7e784e3b-b494-423b-89b8-10c81e39fd1b|
+#=#=#=# Syncrun finished 2020-10-20T11:08:59Z (last step: 339 msec, total: 2001 msec)
+#=#=#=# Syncrun started 2020-10-20T11:09:31Z
+#=#=#=#=# Propagation starts 2020-10-20T11:09:32Z (last step: 369 msec, total: 369 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:09:32Z (last step: 14 msec, total: 383 msec)
+#=#=#=# Syncrun started 2020-10-20T11:14:24Z
+#=#=#=#=# Propagation starts 2020-10-20T11:14:24Z (last step: 332 msec, total: 332 msec)
+11:14:25||css/ejemplo3.css|INST_SYNC|Up|1603192434|9c05e53cef946230874b3d17b0c73df0|216|22381489oc0aeoh88i4k|4||204|221|1603192105|6678aab5-0ff3-4a0d-8d82-3826608fe041|
+#=#=#=# Syncrun finished 2020-10-20T11:14:24Z (last step: 206 msec, total: 538 msec)
+#=#=#=# Syncrun started 2020-10-20T11:14:26Z
+#=#=#=#=# Propagation starts 2020-10-20T11:14:27Z (last step: 717 msec, total: 717 msec)
+11:14:28||Ejemplo3.html|INST_SYNC|Up|1603192437|646a6e4b1dfe70269fe61ed93ee16973|564|22381471oc0aeoh88i4k|4||204|564|1603192107|cf3425f6-a2e7-4d33-a6e5-a9f6832ffb27|
+#=#=#=# Syncrun finished 2020-10-20T11:14:27Z (last step: 258 msec, total: 976 msec)
+#=#=#=# Syncrun started 2020-10-20T11:15:03Z
+#=#=#=#=# Propagation starts 2020-10-20T11:15:06Z (last step: 3209 msec, total: 3209 msec)
+11:15:07||Ejemplo3.html|INST_SYNC|Up|1603192473|25f4def3867f261008412a8736172bca|649|22381471oc0aeoh88i4k|4||204|564|1603192437|d2d8523f-0064-418a-b6a9-ac212b5ebd8a|
+#=#=#=# Syncrun finished 2020-10-20T11:15:06Z (last step: 176 msec, total: 3386 msec)
+#=#=#=# Syncrun started 2020-10-20T11:15:09Z
+#=#=#=#=# Propagation starts 2020-10-20T11:15:10Z (last step: 323 msec, total: 323 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:15:10Z (last step: 17 msec, total: 340 msec)
+#=#=#=# Syncrun started 2020-10-20T11:16:01Z
+#=#=#=#=# Propagation starts 2020-10-20T11:16:02Z (last step: 354 msec, total: 354 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:16:02Z (last step: 22 msec, total: 377 msec)
+#=#=#=# Syncrun started 2020-10-20T11:16:05Z
+#=#=#=#=# Propagation starts 2020-10-20T11:16:06Z (last step: 388 msec, total: 388 msec)
+11:16:06||css/ejemplo3.css|INST_SYNC|Up|1603192535|5751ecaea9f286f05bc84215ecbe37dc|284|22381489oc0aeoh88i4k|4||204|216|1603192434|ad15d8b9-8dca-4bb0-a535-ffb97f2aed74|
+#=#=#=# Syncrun finished 2020-10-20T11:16:06Z (last step: 237 msec, total: 625 msec)
+#=#=#=# Syncrun started 2020-10-20T11:16:43Z
+#=#=#=#=# Propagation starts 2020-10-20T11:16:44Z (last step: 778 msec, total: 778 msec)
+11:16:44||Ejemplo3.html|INST_SYNC|Up|1603192572|7a267b4aa1be19f13c24135caa019df2|684|22381471oc0aeoh88i4k|4||204|649|1603192473|7af5fd6b-2379-476c-99a2-30472fa47a62|
+#=#=#=# Syncrun finished 2020-10-20T11:16:44Z (last step: 244 msec, total: 1023 msec)
+#=#=#=# Syncrun started 2020-10-20T11:17:02Z
+#=#=#=#=# Propagation starts 2020-10-20T11:17:02Z (last step: 337 msec, total: 337 msec)
+11:17:02||Ejemplo3.html|INST_SYNC|Up|1603192591|6478dee67ce83c79a3457342b844ca25|700|22381471oc0aeoh88i4k|4||204|684|1603192572|05cd7ba9-0382-4841-9734-fc8f2f667b40|
+#=#=#=# Syncrun finished 2020-10-20T11:17:02Z (last step: 283 msec, total: 620 msec)
+#=#=#=# Syncrun started 2020-10-20T11:17:44Z
+#=#=#=#=# Propagation starts 2020-10-20T11:17:45Z (last step: 380 msec, total: 380 msec)
+11:17:44||css/ejemplo3.css|INST_SYNC|Up|1603192633|d74613f8950969980356a799acc1d9a3|343|22381489oc0aeoh88i4k|4||204|284|1603192535|22095801-e9ac-4e5e-8f8c-840b93ecdade|
+#=#=#=# Syncrun finished 2020-10-20T11:17:45Z (last step: 161 msec, total: 541 msec)
+#=#=#=# Syncrun started 2020-10-20T11:17:49Z
+#=#=#=#=# Propagation starts 2020-10-20T11:17:50Z (last step: 628 msec, total: 628 msec)
+11:17:49||css/ejemplo3.css|INST_SYNC|Up|1603192638|c38bdf1d8e1a6bd6987bd27f1f636c30|343|22381489oc0aeoh88i4k|4||204|343|1603192633|0ec53e13-c5c5-4458-974d-dd666e4c10dd|
+#=#=#=# Syncrun finished 2020-10-20T11:17:50Z (last step: 175 msec, total: 803 msec)
+#=#=#=# Syncrun started 2020-10-20T11:18:31Z
+#=#=#=#=# Propagation starts 2020-10-20T11:18:32Z (last step: 653 msec, total: 653 msec)
+#=#=#=# Syncrun finished 2020-10-20T11:18:32Z (last step: 25 msec, total: 679 msec)

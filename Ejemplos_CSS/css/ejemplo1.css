@@ -1,0 +1,20 @@
+header#encabezado{
+	font-size: 20px;
+    background: green;
+}
+footer#estilo{
+	font-weight: bold;
+}
+p, h1{
+	color:green;
+	background: yellow;
+	border: 2px solid black;
+ }
+p{
+	font-size: 40px;
+}
+.destacado>b{ color: pink; }
+
+.destacado{
+	color: red;
+}
