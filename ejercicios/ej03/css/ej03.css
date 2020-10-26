@@ -1,5 +1,5 @@
 #titulo {
-	color: green;
+	color: teal;
 }
 
 strong {
@@ -23,7 +23,7 @@ a>em {
 }
 
 .especial {
-	color: violet;
+	color: purple;
 }
 
 th.especial {
@@ -34,8 +34,32 @@ table caption {
 	color: blue;
 }
 
+table td {
+	color: green;
+}
+
+table td strong {
+	color:orange;
+}
+
+table tr th {
+	color: red;
+}
+
 table, td, th {
 	border: 1px solid #000;
 	padding: 0px;
 	margin: 0px;
+}
+
+#adicional p {
+	color: olive;
+}
+
+#adicional p span#especial {
+	color: magenta;
+}
+
+#adicional p a {
+	color: green;
 }
