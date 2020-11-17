@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ej11. - Efecto Flip</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<div class="caja" onmouseout="clearText();">
+				<div class="face front"><img src="img/cd_cover.jpg" width="300" /></div>
+				<div class="face back">
+					<div class="song" onclick="verText(1);">01. Defying the predictible</div>
+					<div class="song" onclick="verText(2);">02. Ghetto</div>
+					<div class="song" onclick="verText(3);">03. Motherland</div>
+					<div class="song" onclick="verText(4);">04. All the right moves</div>
+					<div class="song" onclick="verText(5);">05. I can be president</div>
+					<div class="song" onclick="verText(6);">06. Here the next</div>
+					<div class="song" onclick="verText(7);">07. Fighters</div>
+					<div class="song" onclick="verText(8);">08. Stand up</div>
+					<div class="song" onclick="verText(9);">09. Like I know</div>
+					<div class="song" onclick="verText(10);">10. Raindrops</div>
+				</div>
+			</div>
+		</div>
+		<div id="miText"></div>
+	</div>
+
+	
+
+	<script>
+		function clearText(){
+			document.getElementById('miText').innerHTML = '';
+		}
+
+		function verText(id) {
+			var text = '';
+			switch(id) {
+				case 1:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Defying the predictible</b>'; 
+				break;
+				case 2:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Ghetto</b>';
+				break;
+				case 3:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Motherland</b>';
+				break;
+				case 4:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>All the right moves</b>';
+				break;
+				case 5:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>I can be president</b>';
+				break;
+				case 6:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Here the next</b>';
+				break;
+				case 7:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Fighters</b>';
+				break;
+				case 8:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Stand up</b>';
+				break;
+				case 9:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Like I know</b>';
+				break;
+				case 10:
+				text = 'Letras de la canción nr. '+id+':<br>  <b>Raindrops</b>';
+				break;
+			}
+
+			document.getElementById('miText').innerHTML = text;
+		}
+	</script>
+	
+</body>
+</html>

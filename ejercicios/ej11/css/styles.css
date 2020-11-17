@@ -1,0 +1,60 @@
+div.main {
+	text-align: center;
+	width: 600px;
+	margin: 40px auto;
+
+}
+
+div#miText {
+	width: 260px;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	color: #1d3557;
+}
+
+div.container {
+	width: 300px;
+	height: 300px;
+	perspective: 600px;
+	border:1px solid #aaa;
+}
+
+div.caja {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	text-align: left;
+
+}
+
+div.face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+div.front {
+	background: red;
+}
+
+div.back {
+	background: #a8dadc;
+	transform: rotateY(180deg);
+	padding: 20px 40px;
+	width: 220px;
+	height: 260px;
+}
+
+div.caja:hover {
+  transform: rotateY(180deg);
+}
+
+div.song {
+	color: #1d3557;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
