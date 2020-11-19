@@ -1,0 +1,49 @@
+.pelota{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	height: 150px;
+	width: 150px;
+	background: url('../img/basketball.jpeg');
+	background-size: 100%;
+	animation: animar 3s infinite normal;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes animar {
+		0% { transform: translate(0,0); }
+		20% {  transform: translate(0,300px); }
+		40% {  transform: translate(0px,150px); }
+		50% {  transform: translate(0px,300px); }
+		60% {  transform: translate(0px,225px); }
+		64% {  transform: translate(0px,300px); }
+		68% {  transform: translate(0px,250px); }
+		70% {  transform: translate(0px,300px); }
+		100% {  transform: translate(100px,300px) rotate(80deg); }
+}
+
+.balon{
+	position: absolute;
+	top: 10px;
+	left: 300px;
+	height: 150px;
+	width: 150px;
+	background: url('../img/basketball.jpeg');
+	background-size: 100%;
+	animation: botar 3s infinite normal;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes botar {
+		0% { transform: translate(0,0); }
+		20% {  transform: translate(0,300px); }
+		40% {  transform: translate(0px,150px); }
+		50% {  transform: translate(0px,300px); }
+		60% {  transform: translate(0px,225px); }
+		64% {  transform: translate(0px,300px); }
+		68% {  transform: translate(0px,250px); }
+		70% {  transform: translate(0px,300px); }
+		100% {  transform: translate(100px,300px) rotate(80deg); }
+}
