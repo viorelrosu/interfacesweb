@@ -1,0 +1,33 @@
+
+.main {
+	background: #f1f1f1;
+	overflow: hidden;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.prev {
+	float: left;
+	height: 200px;
+	width: 188px;
+	background: url('../arrows-kit.png') -188px 0px;
+}
+
+.prev:hover {
+	float: left;
+	height: 200px;
+	width: 200px;
+	background: url('../arrows-kit.png') -364px -364px;
+}
+
+.next {
+	float:right; 
+	height: 200px;
+	width: 200px;
+	background: url('../arrows-kit.png') 0px 0px;
+}
+
+.next:hover {
+	background: url('../arrows-kit.png') -364px 0px;
+}

@@ -1,0 +1,12 @@
+label { display: block; }
+input.btn {
+	margin-top:5px;
+	display:block;
+}
+input { padding: 4px; margin-bottom: 10px; position: relative;}
+input:focus {
+	border-spacing: 2px;
+	background-color: rgba(255,255,0,0.5);
+}
+ span.required { display: none; color:red; }
+ input:hover + span.required { display: inline; }

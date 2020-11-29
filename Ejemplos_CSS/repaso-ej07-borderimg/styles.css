@@ -1,0 +1,63 @@
+.main {
+	width: 700px;
+	margin: 20px auto;
+}
+
+.borde {
+	line-height: 50px;
+	width: 200px;
+	text-align: center;
+	border: 10px solid;
+	border-image: url(borde.png) 10 round;
+}
+
+#preloader {
+	width: 200px;
+	text-align:center;
+	padding: 20px 0;
+	position: relative;
+}
+
+#preloader span {
+	position:absolute;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: #3498db;
+	border-radius: 50%;
+	animation: preloader 1s infinite normal;
+	animation-timing-function: linear;
+	top: 1;
+	left: 50px;
+}
+
+#preloader span:nth-child(1) {
+	left: 60px;
+	animation-delay: .0s;
+}
+
+#preloader span:nth-child(2) {
+	left: 75px;
+	animation-delay: .2s;
+}
+
+#preloader span:nth-child(3) {
+	left: 90px;
+	animation-delay: .4s;
+}
+
+#preloader span:nth-child(4) {
+	left: 105px;
+	animation-delay: .6s;
+}
+
+#preloader:hover span{
+	animation-play-state: paused;
+}
+
+@keyframes preloader {
+	0% { opacity: .25;  }
+	25% { opacity: .5; }
+	50% { opacity: .75; }
+	100% { opacity: 1; }
+}

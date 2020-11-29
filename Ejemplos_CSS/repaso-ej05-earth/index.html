@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.globe-container {
+			margin: 120px auto;
+			width: 91px;
+			height: 92px;
+			border-radius: 50px;
+			background: url(map.png);
+			animation: rotar 4s infinite linear;
+		}
+
+		.globe {
+			width: 91px;
+			height: 92px;
+			background: url(shadow_highlight.png) top left no-repeat;
+		}
+
+		@keyframes rotar {
+			0% { background-position: 0px 0px; }
+			100% { background-position: 321px 0px; }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="globe-container">
+		<div class="globe"></div>
+	</div>
+</body>
+</html>
