@@ -1,0 +1,174 @@
+div.container {
+	background: url(img/background.jpg) no-repeat;
+	background-size: cover;
+	width: 1280px;
+	height: 426px;
+	border: 1px solid #444;
+	box-shadow:5px 5px 6px #333;
+	margin: 0 auto;
+	z-index: 0;
+	position: relative;
+}
+
+div.hills_2 {
+	width: 1280px;
+	height: 318px;
+	background: url(img/hills_azul_2.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	top: 108px;
+}
+
+div.hills_1 {
+	width: 1280px;
+	height: 256px;
+	background: url(img/hills_azul_1.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 2;
+	top: 170px;
+}
+
+div.hills {
+	width: 1280px;
+	height: 142px;
+	background: url(img/hills.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 3;
+	top: 284px;
+}
+
+div.nube_gr {
+	width: 208px;
+	height: 74px;
+	background: url(img/nube_gr.png) no-repeat;
+	background-size: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 40px;
+	right: 400px;
+	animation: moverNubeGr 10s infinite linear;
+}
+
+@-webkit-keyframes moverNubeGr {
+	0% {
+		right: 400px;
+	}
+	100% {
+		right: 600px;
+	}
+}
+
+div.nube_peq {
+	width: 124px;
+	height: 59px;
+	background: url(img/nube_peq.png) no-repeat;
+	background-size: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 60px;
+	right: 400px;
+	animation: moverNubePeq 10s infinite linear;
+}
+
+@-webkit-keyframes moverNubePeq {
+	0% {
+		right: 300px;
+	}
+	100% {
+		right: 200px;
+	}
+}
+
+div.sol {
+	width: 163px;
+	height: 163px;
+	background: url(img/sol.png) no-repeat;
+	background-size: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 40px;
+	right: 240px;
+	animation: moverSol 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes moverSol {
+	0% {
+		right: 400px;
+	}
+	100% {
+		right: 240px;
+	}
+}
+
+div.mushrooms_left {
+	width: 356px;
+	height: 299px;
+	background: url(img/mushrooms_left.png) no-repeat;
+	background-size: 100%;
+	z-index: 4;
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+
+div.mushrooms_right {
+	width: 140px;
+	height: 152px;
+	background: url(img/mushrooms_right.png) no-repeat;
+	background-size: 100%;
+	z-index: 3;
+	position: absolute;
+	top: 240px;
+	right: 50px;
+}
+
+div.grass {
+	width: 1280px;
+	height: 107px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 6;
+	top: 0px;
+	background: url(img/grass.png) no-repeat;
+	background-size: 100%;
+}
+
+
+div.personaje {
+	background: url(spritestrip.png);
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	z-index: 3;
+	height: 256px;
+	width: 256px;
+	animation-name: caminar, mover;
+	animation-duration: 1s, 5s;
+	animation-iteration-count: infinite,infinite;
+	animation-timing-function: steps(6), linear;
+}
+
+@-webkit-keyframes caminar {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 1536px 0px;
+	}
+}
+
+@-webkit-keyframes mover {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 1000px;
+	}
+}
+
