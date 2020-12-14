@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coke cola</title>
+	<style>
+		.container {
+			margin: 120px auto;
+			width: 194px;
+			height: 336px;
+			background: url(coke.jpg);
+			animation: rotar 4s infinite linear;
+		}
+		.lata {
+			width: 194px;
+			height: 336px;
+			background: url(lata.png) top left no-repeat;
+		}
+
+		@keyframes rotar {
+			0% { background-position: 0px 0px; }
+			100% { background-position: 446px 0px; }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="lata">&nbsp;</div>
+	</div>
+</body>
+</html>
