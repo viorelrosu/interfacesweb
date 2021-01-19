@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo jQuery</title>
+	<script type="text/javascript" src="../lib/jquery-3.5.1.min.js" charset="utf-8" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log($("h1").text());
+			console.log($("p").length);
+			var $div = $("div.miDiv");
+			var $parrafos = $("p");
+			console.log($parrafos.length);
+			console.log($parrafos.text());
+			console.log($div.length);
+			$("div.foo").has('p');
+			$("h1").not('.bar');
+			$("ul li").filter('.current');
+			$("ul li").first(); // el primer item de la lista
+			$("ul li").eq(3); //el tercer elemento
+			$("input:text"); //los inputs de tipo text
+			$("p").first()
+				.text('He modificado el texto del primer parrafo.')
+				.next()
+				.text('He modificado el texto del segundo parrafo.')
+				.prev()
+				.text('He vuelto ha modificar el texto del primer parrafo');
+
+			$("p").eq(1).next().text('He modificado el texto del tercer parrafo.');
+			$("p:first").html("Este <b>párrafo</b> está modificado.");
+			$("div#divText").find("p").html("He <b>modificado</b> el texto.");
+			console.log($("h1").css("font-size"));
+			console.log($("h1").css("fontSize"));
+
+			console.log($("p").first().css("font-size"));
+			console.log($("p").first().css("font-size","+=10px"));
+
+			$("div#divText").addClass("uno");
+			console.log($("div#divText").hasClass("uno"));
+			$("div#divText").toggleClass("uno");
+			console.log($("div#divText").hasClass("uno"));
+
+			console.log($("a").attr("href"));
+			$("a").attr({
+				"href":"http://www.google.com",
+				"title":"Google"
+			});
+			console.log($("a").attr("href"));
+
+			$("div").next(); //siguiente
+			$("div").prev(); //anterior
+			$("div").parent(); //padre
+			$("div").children(); //hijos
+			$("div").siblings(); //hermanos
+
+			$("p").each(function(){
+				console.log(this.text());
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<h1>Esto es un ejemplo de jquery.</h1>
+	<p>Esto es un parrafo 1</p>
+	<p>Esto es un parrafo 2</p>
+	<p>Esto es un parrafo 3</p>
+	<p>Esto es un parrafo 4</p>
+	<p>Esto es un parrafo 5</p>
+	<div class="miDiv">Esto es un div</div>
+	<div id="divText">
+		<p>mi parrafo</p>
+	</div>
+
+	<a href="http://wwww.google.es" title="">Ir a google</a>
+</body>
+</html>

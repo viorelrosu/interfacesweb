@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo jQuery</title>
+	<script type="text/javascript" src="../lib/jquery-3.5.1.min.js" charset="utf-8" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $("div").next(); //siguiente
+			// $("div").prev(); //anterior
+			// $("div").parent(); //padre
+			// $("div").children(); //hijos
+			// $("div").siblings(); //hermanos
+
+			//console.log($("p").text());
+
+			$("p").each(function(index, el){
+				console.log("text: "+(++index)+". "+$(this).text() + '\n');
+				// $(el).addClass("uno");
+				$(this).toggleClass("uno");
+
+				// $(el) es igual que $(this)
+			});
+
+			$("p.uno").removeClass("uno");
+			$("p").even().addClass("uno");
+
+			// $("div").insertAfter();
+			// $("div").insertBefore();
+			// $("div").after();
+			// $("div").before();
+
+			// $("div").appendTo();
+			// $("div").append();
+
+			var $li = $("#myList li:first").appendTo("#myList");
+			console.log($li.text());
+
+			var $lista = $("#myList").append($("myList li:first"));
+			console.log($lista);
+
+			//console.log($("ul:first")); //para obtener el primer ul
+
+			$("ul:first li:last").prependTo($("ul:first"));
+			$("ul:first li:first").clone().appendTo($("ul:last"));
+		});
+	</script>
+	<style type="text/css">
+		.uno {
+			color: blue;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Esto es un ejemplo de jquery.</h1>
+	<p>Esto es un parrafo 1</p>
+	<p class="uno">Esto es un parrafo 2</p>
+	<p>Esto es un parrafo 3</p>
+	<p class="uno">Esto es un parrafo 4</p>
+	<p>Esto es un parrafo 5</p>
+	<div class="miDiv">Esto es un div</div>
+	<div id="divText">
+		<p>mi parrafo</p>
+	</div>
+
+	<ul>
+		<li>Li 1</li>
+		<li>Li 2</li>
+		<li>Li 3</li>
+		<li>Li 4</li>
+	</ul>
+
+	<ul id="myList">
+		<li>Li 1</li>
+		<li>Li 2</li>
+		<li>Li 3</li>
+		<li>Li 4</li>
+	</ul>
+
+	<a href="http://wwww.google.es" title="">Ir a google</a>
+</body>
+</html>
