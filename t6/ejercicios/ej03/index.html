@@ -14,23 +14,19 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			console.log("Divs class .module: ");
-			console.log($("div.module"));
-			console.log("Li tercero: 1 ");
-			console.log($("ul#myList li").eq("2"));
-			console.log("Li tercero: 2 ");
-			console.log($("ul#myList li").first().next().next());
-			console.log("Li tercero: 3 ");
-			console.log($("li#myListItem"));
-			console.log("Li tercero: 4 ");
-			console.log($("#myListItem"));
-			console.log("Label: ");
-			console.log($("label[for=q]"));
-			console.log("Elementos ocultos: " + ($(":hidden")).length);
-			console.log("Imagenes con alt");
-			console.log($("img[alt]").length);
-			console.log("Tr impares: ");
-			console.log($("table#fruits tr:odd"));
+			for (var i = 0; i<5; i++) {
+				 $("<li>Option "+(i+1)+"</li>").appendTo("ul#myList");
+			}
+
+			$("ul#myList li:odd").remove();
+
+			$("<h2>Nuevo H2</h2>").appendTo('div.module:last');
+			$("<p>Nuevo parrafo</p>").appendTo('div.module:last');
+
+			$("<option>New Wednesday</option>").appendTo('select[name="day"]');
+			$('select[name="day"] option:last').val("Wednesday");
+			$("div.module").insertAfter('div.module:last');
+			$('img:first').clone().appendTo('div.module:last');
 		});
 	</script>
 

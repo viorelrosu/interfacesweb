@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="../lib/jquery-3.5.1.min.js" charset="utf-8" ></script>
+	<style type="text/css">
+		.destacado {
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//$("ul.aficiones li:first").clone().appendTo("ul.aficiones");
+
+			$("button#bajar").click(function(){
+				$("ul.aficiones li:first").appendTo("ul.aficiones");
+			});
+
+			$("button#subir").click(function(){
+				$("ul.aficiones li:last").prependTo("ul.aficiones");
+			});
+
+			$("button#copiar").click(function(){
+				$("ul.aficiones li:first").clone().appendTo("ul.aficiones");
+			});
+
+			$("ul.aficiones li").click(function(){
+				$(this).toggleClass("destacado");
+			});
+
+			$("button#borrar").click(function(){
+				$("ul.aficiones li:last").remove();
+			});
+
+			$("button#detach").click(function(){
+				//ya no se 
+				$("ul.aficiones li:last").detach();
+			});
+
+			$("button#aniadir").click(function(){
+				var aficion = $("input#aficion").val();
+				$("<li>"+aficion+"</li>").appendTo("ul.aficiones");
+				$("input#aficion").val("");
+				$("span#num").text( $("ul.aficiones li").length );
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	Lista de aficiones <span id="num" class="badge badge-info">3</span>
+	<label for="aficion">Afición</label>
+	<input type="text" name="" id="aficion" />
+
+	<ul class="aficiones">
+		<li>Deporte</li>
+		<li>Lectura</li>
+		<li>Senderismo</li>
+	</ul>
+	<button id="bajar">Bajar</button>
+	<button id="subir">Subir</button>
+	<button id="copiar">Copiar</button>
+	<button id="borrar">Borrar last</button>
+	<button id="detach">Detach last</button>
+	<button id="aniadir">Añadir</button>
+</body>
+</html>
