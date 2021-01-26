@@ -36,13 +36,13 @@
 				$("ul.aficiones li:first").clone().appendTo("ul.aficiones");
 			});
 
-			$("ul.aficiones li").on({
-					"click": function(){
-						$(this).toggleClass("destacado");
+			// $("ul.aficiones li").on({
+			// 		"click": function(){
+			// 			$(this).toggleClass("destacado");
 
-						console.log("se ha pulsado en un li");
-						console.log("Hay " + $("ul.aficiones li.destacado").length + " elementos destacados");
-					},
+			// 			console.log("se ha pulsado en un li");
+			// 			console.log("Hay " + $("ul.aficiones li.destacado").length + " elementos destacados");
+			// 		},
 					/*"mouseenter": function(){
 						$(this).addClass("resaltado");
 					},
@@ -50,6 +50,14 @@
 						//$(this).css("color", "blue");
 						$(this).removeClass("resaltado");
 					}*/
+			// 	}
+			// );
+
+			$("ul.aficiones").on("click", "li",function(){
+					$(this).toggleClass("destacado");
+
+					//console.log("se ha pulsado en un li");
+					//console.log("Hay " + $("ul.aficiones li.destacado").length + " elementos destacados");
 				}
 			);
 
@@ -67,12 +75,10 @@
 				$("<li>"+aficion+"</li>").appendTo("ul.aficiones");
 				$("input#aficion").val("");
 				$("span#num").text( $("ul.aficiones li").length );
-
-				
 			});
 
 			$("i.fa-arrow-alt-circle-up").on('click',function(){
-				console.log();
+				//console.log();
 				$(this).closest("li").before( $(this).parent() );
 			})
 
@@ -89,6 +95,30 @@
 				$(this).closest("li").remove();
 			})
 
+			$(document).on({
+				"click":function(e){
+					$("#info").text('has pulsado el las coordenadas. ' + e.pageX+", " +e.pageY);
+				},
+				"mousemove": function(e){
+					$("#info").text("El puntero está en las coordenadas: " + e.pageX+", " +e.pageY);
+				}
+			});
+
+			$("#deshabilitar").click(function(){
+				$("ul.aficiones li").off("click");
+			})
+
+			$("#habilitar").click(function(){
+				$("ul.aficiones li").on("click",function(){
+					$(this).toggleClass("destacado");
+				});
+			})
+
+			$("a").on("click", function(e){
+				e.preventDefault();
+				alert("No voy a ir a Google");
+			});
+
 
 		});
 	</script>
@@ -96,6 +126,8 @@
 <body>
 
 	<div class="container py-5">
+
+		<div class="alert alert-info" id="info">Pulsa en el documento.</div>
 
 		<h3>Lista de aficiones <span id="num" class="badge badge-info">3</span></h3>
 
@@ -105,7 +137,6 @@
 			<input type="text" name="" id="aficion" />
 			<button id="aniadir" class="btn btn-primary btn-sm">Añadir</button>
 		</div>
-		
 
 		<ul class="aficiones list-group">
 			<li class="list-group-item">
@@ -118,7 +149,6 @@
 						<i class="fas fa-times-circle"></i>
 					</div>
 				</div>
-				
 			</li>
 			<li class="list-group-item">
 				<div class="row">
@@ -148,7 +178,12 @@
 		<button id="copiar" class="btn btn-primary btn-sm">Copiar</button>
 		<button id="borrar" class="btn btn-primary btn-sm">Borrar last</button>
 		<button id="detach" class="btn btn-primary btn-sm">Detach last</button>
-		
+		<button id="deshabilitar" class="btn btn-primary btn-sm">Deshabilitar</button>
+		<button id="habilitar" class="btn btn-primary btn-sm">Habilitar</button>
+
+		<div class="py-5">
+			<a href="http://google.com">Google</a>
+		</div>
 	</div>
 </body>
 </html>
