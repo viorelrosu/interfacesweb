@@ -54,24 +54,31 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("div.blue").click(function(){
-				$("div#fondo").removeClass("blue yellow black red").addClass("blue");
-			});
-			$("div.yellow").click(function(){
-				$("div#fondo").removeClass("blue yellow black red").addClass("yellow");
-			});
-			$("div.black").click(function(){
-				$("div#fondo").removeClass("blue yellow black red").addClass("black");
-			});
-			$("div.red").click(function(){
-				$("div#fondo").removeClass("blue yellow black red").addClass("red");
+			// $("div.blue").click(function(){
+			// 	$("div#fondo").removeClass("blue yellow black red").addClass("blue");
+			// });
+
+			// $("div.yellow").click(function(){
+			// 	$("div#fondo").removeClass("blue yellow black red").addClass("yellow");
+			// });
+
+			// $("div.black").click(function(){
+			// 	$("div#fondo").removeClass("blue yellow black red").addClass("black");
+			// });
+
+			// $("div.red").click(function(){
+			// 	$("div#fondo").removeClass("blue yellow black red").addClass("red");
+			// });
+
+			$("div.cuadrado").click(function(){
+				var clases = $(this).attr("class").split(" ");
+				$("div#fondo").removeClass("blue yellow black red").addClass(clases[1]);
 			});
 
 			$("div.cuadrado").hover(
 				function(e){
-					var clases = $(this).attr("class");
-					var color = clases.split(" ");
-					$("div.tooltip").css("top", (e.pageY+5)).css("left",(e.pageX+5)).css("background-color",color[1]).show().text(color[1]);
+					var clases = $(this).attr("class").split(" ");
+					$("div.tooltip").css("top", (e.pageY+5)).css("left",(e.pageX+5)).css("background-color",clases[1]).show().text(clases[1]);
 				},
 				function(){
 					$("div.tooltip").hide();

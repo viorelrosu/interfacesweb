@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="../ejercicios/lib/jquery-3.5.1.min.js" charset="utf-8" ></script>
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("input").on("keypress", function(e){
+				ascii_tecla = e.which;
+				tech = String.fromCharCode(ascii_tecla);
+				console.log('Has escrito el caracter: ' + tech.toString() + ' en el input');
+			});
+
+			// $(document).on("keydown", function(){
+			// 	console.log('Has pulsado una tecla');
+			// });
+
+
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<input type="text" name="" />
+	</div>
+</body>
+</html>
