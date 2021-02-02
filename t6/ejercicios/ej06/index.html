@@ -6,55 +6,6 @@
 
 	<title>Ej 06</title>
 	<link href="assets/bootstrap.min.css" rel="stylesheet">
-	<script type="text/javascript" src="assets/jquery-3.5.1.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var total = consonantes = vocales = 0;
-
-			$(document).on("keydown",(e)=>{
-				var ascii_tecla = e.which;
-				var miDiv = $("div.miDiv");
-				switch(ascii_tecla) {
-			        case 37: // left
-			        	miDiv.css({
-			        		'left':'-=5px',
-			        		'background-position-y':'-64px',
-			        		'background-position-x':'+=64px',
-			        	});
-			        	break;
-
-			        case 38: // up
-			        	miDiv.css({
-			        		'top':'-=5px',
-			        		'background-position-y':'-192px',
-			        		'background-position-x':'+=64px',
-			        	});
-			        	break;
-
-			        case 39: // right
-			        	miDiv.css({
-			        		'left':'+=5px',
-			        		'background-position-y':'-128px',
-			        		'background-position-x':'+=64px',
-			        	});
-			        	break;
-
-			        case 40: // down
-			        	miDiv.css({
-			        		'top':'+=5px',
-			        		'background-position-y':'0px',
-			        		'background-position-x':'+=64px',
-			        	});
-			        	break;
-
-			        default: return;
-			    }
-
-
-			});
-		});
-	</script>
 	<style>
 		div.miDiv {
 			width: 64px;
@@ -68,12 +19,141 @@
 			top: 100px;
 			left: 100px;
 		}
+
+		span.badge-info {
+			position: absolute;
+			top: 86px;
+			left: 123px;
+			z-index: 1;
+		}
+
+		span.badge-warning {
+			position: absolute;
+			top: 86px;
+			left: 150px;
+			z-index: 1;
+		}
+		div.manzana{
+			background-image: url("assets/manzana.png");
+			position: absolute; top: 200px; left: 200px;
+			width: 30px; height: 30px;
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
 	</style>
+	<script type="text/javascript" src="assets/jquery-3.5.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var myInterval, startTime, endTime;
+			var maxTime = 5;
+
+			function start() {
+				clearInterval(myInterval);
+				startTime = new Date();
+				myInterval = setInterval( end, 1000);
+			};
+
+			function end() {
+			  endTime = new Date();
+			  var timeDiff = endTime - startTime; //in ms
+			  // strip the ms
+			  timeDiff /= 1000;
+
+			  // get seconds 
+			  var seconds = Math.round(timeDiff);
+			  $("span.badge-warning").text(seconds);
+			  if(seconds > maxTime) {
+			  	clearInterval(myInterval);
+			  	alert("Lo siento, has perdido.");
+			  }
+			  
+			}
+
+			$("span.badge-info").text();
+
+			$(document).on("keydown",(e)=>{
+				var ascii_tecla = e.which;
+				var miDiv = $("div.miDiv");
+				var badgeInfo = $("span.badge-info");
+				var badgeWarning = $("span.badge-warning");
+				switch(ascii_tecla) {
+			        case 37: // left
+			        	miDiv.css({
+			        		'left':'-=5px',
+			        		'background-position-y':'-64px',
+			        		'background-position-x':'+=64px',
+			        	});
+			        	badgeInfo.css("left", "-=5px");
+			        	badgeWarning.css("left", "-=5px");
+			        	break;
+
+			        case 38: // up
+			        	miDiv.css({
+			        		'top':'-=5px',
+			        		'background-position-y':'-192px',
+			        		'background-position-x':'+=64px',
+			        	});
+			        	badgeInfo.css("top", "-=5px");
+			        	badgeWarning.css("top", "-=5px");
+			        	break;
+
+			        case 39: // right
+			        	miDiv.css({
+			        		'left':'+=5px',
+			        		'background-position-y':'-128px',
+			        		'background-position-x':'+=64px',
+			        	});
+			        	badgeInfo.css("left", "+=5px");
+			        	badgeWarning.css("left", "+=5px");
+			        	break;
+
+			        case 40: // down
+			        	miDiv.css({
+			        		'top':'+=5px',
+			        		'background-position-y':'0px',
+			        		'background-position-x':'+=64px',
+			        	});
+			        	badgeInfo.css("top", "+=5px");
+			        	badgeWarning.css("top", "+=5px");
+			        	break;
+
+			        default: return;
+			    }
+
+			    x_miDiv=parseInt(miDiv.css("left"));
+			    y_miDiv=parseInt(miDiv.css("top"));
+				x_apple=parseInt($("div.manzana").css("left"));
+				y_apple=parseInt($("div.manzana").css("top"));
+
+				//console.log ("personaje: "+x_miDiv+","+y_miDiv);
+				//console.log ("manzana : "+y_apple+","+y_apple);
+
+				if (x_apple>x_miDiv-30 && x_apple<x_miDiv+30){
+					if (y_apple>y_miDiv-30 && y_apple<y_miDiv+30) {			
+						miDiv.data("puntos", miDiv.data("puntos")+1);
+
+						//console.log( miDiv.data("puntos") );
+
+						badgeInfo.text( miDiv.data("puntos") );
+						x=Math.random() * 700;
+						y=Math.random() * 400;
+						$("div.manzana").css({"left" : x, "top" : y });
+						start();
+					}
+				};
+
+			});
+
+		});
+	</script>
 </head>
 
 <body>
-
-	<div class="miDiv"></div>
-
+	<span class="badge badge-info">0</span>
+	<span class="badge badge-warning">0</span>
+	<div class="miDiv" data-puntos="0"></div>
+	<div class="manzana"></div>
 </body>
 </html>

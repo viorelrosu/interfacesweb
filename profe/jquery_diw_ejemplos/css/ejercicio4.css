@@ -1,0 +1,21 @@
+.cuadro{
+	width: 50px; height: 50px;
+	border: 2px solid white;
+	margin: 10px;
+	display: inline-block;
+}
+#red{background-color: red;}
+#blue{background-color: blue;}
+#green{background-color: green;}
+#grey{background-color: grey;}
+
+#tip{
+	position: absolute;
+	text-align: center;
+	line-height: 30px;
+	width: 100px; height: 30px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 5px;
+	visibility: hidden;
+}

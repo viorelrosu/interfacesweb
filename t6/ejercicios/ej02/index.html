@@ -43,10 +43,9 @@
 			$("ul#myList li.current").removeClass('current').next().addClass('current');
 
 			console.log( $("div#specials").find("select").closest('input[type="submit"]') );
+			console.log( $("div#specials select").closest('input[type="submit"]') );
 
 			$("ul#slideshow li:first").addClass('current').siblings().addClass('disabled');
-			
-
 			
 		});
 	</script>

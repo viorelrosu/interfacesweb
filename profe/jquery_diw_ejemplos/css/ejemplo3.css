@@ -1,0 +1,19 @@
+div.keko{
+	width: 64px; height: 64px;	
+	text-align: center; line-height: 50px;
+	position: absolute; top: 100px; left: 100px;
+	background-image: url("../img/sprite.png");
+	background-position: 0px 0px;
+}
+span.badge{
+	position: absolute; top: 90px; left: 122px;
+	z-index: 1;
+}
+.manzana{
+	background-image: url("../img/manzana.png");
+	position: absolute; top: 100px; left: 100px;
+	width: 30px; height: 30px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+span.van{ background-color: yellow;}
