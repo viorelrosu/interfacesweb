@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Queue</title>
+	<script type="text/javascript" src="../ejercicios/lib/jquery-3.5.1.min.js" charset="utf-8" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				var tempo = 2000;
+				$("#btn-show").on("click",function(){
+					$("p").show(tempo);
+				});
+				$("#btn-hide").on("click",function(){
+					$("p").hide(tempo);
+				});
+				$("#btn-fadein").on("click",function(){
+					$("p").fadeIn(tempo);
+				});
+				$("#btn-fadeout").on("click",function(){
+					$("p").fadeOut(tempo);
+				});
+				$("#btn-slideup").on("click",function(){
+					$("p").slideUp(tempo);
+				});
+				$("#btn-slidedwn").on("click",function(){
+					$("p").slideDown(tempo);
+				});
+				$("#btn-css").on("click",function(){
+					$("p").queue(function(){
+						$(this).css("color","red");
+						$("p").dequeue();
+					});
+				});
+				$("#btn-delay").on("click",function(){
+					$("p").delay(tempo);
+				});
+				$("#btn-stop").on("click",function(){
+					$("p").stop(true,true);
+					//sin parametro stop al efecto en curso
+					//con true,true finaliza toda la cola 
+				});
+				$("#btn-info").on("click",function(){
+					console.log($("p").queue().length);
+				});
+		});
+	</script>
+</head>
+<body>
+	
+	<button id="btn-show">Show</button>
+	<button id="btn-hide">Hide</button>
+	<button id="btn-fadein">FadeIn</button>
+	<button id="btn-fadeout">FadeOut</button>
+	<button id="btn-slideup">SlideUp</button>
+	<button id="btn-slidedwn">SlideDown</button>
+	<button id="btn-css">CSS</button>
+	<button id="btn-delay">Delay</button>
+	<button id="btn-stop">Stop</button>
+	<button id="btn-info">Info</button>
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque omnis consectetur beatae et corporis deleniti ipsum repellendus iste eveniet!</p>
+</body>
+</html>
