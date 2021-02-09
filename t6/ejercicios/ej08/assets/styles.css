@@ -1,19 +1,33 @@
+.zoom-container {
+	position: relative;
+}
+.zoom {
+	background-image: url("imagen.jpg");
+	background-repeat: no-repeat;
+	width: 1024px;
+	overflow: hidden;
+	cursor: zoom-in;
+	margin: auto;
+}
+p {
+  position:absolute;
+  top:10%;
+  left:50%;
+  transform: translate(-50%);
+  color: rgba(255,255,255,0.8);
+  font-family: Arial;
+  font-size:30px;
+  transition:all .5s;
+}
 img {
-	width: 300px;
-	height: 300px;
+	transition: opacity .5s;
+	display: block;
+	width: 100%;
 }
-
-div.cont-img {
-	positin: relative;
+img:hover {
+	opacity: 0;
 }
-
-div.zoom {
-	z-index: 100;
-	width: 600px;
-	height: 460px;
-	background-image: url(imagen.jpg);
-	position: absolute;
-	top: 100px;
-	left: 500px;
-	border: 1px solid #ccc;
+.zoom:hover p {
+  color: white;
+  opacity:0.2;
 }
