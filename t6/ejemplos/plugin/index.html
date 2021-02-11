@@ -10,8 +10,26 @@
 		$(document).ready(function(){
 			$("div").contar();
 			$("p").contar();
+
+			$("button").on("click",function(){
+				$("p").pintar($(this).attr("id"));
+			})
+
+			$("#numeraParrafo").on("click",function(){
+				$("p").numerar(3);
+			})
+
+			//$("div").numerar(4);
+			$("#enlaces").localiza();
+
+			$("p:first").fadeOut().fadeyclase(1000,'destacado');
 		});
 	</script>
+	<style type="text/css">
+		.destacado {
+			background-color: #ccc;
+		}
+	</style>
 </head>
 <body>
 	<div>Lorem ipsum, dolor sit.</div>
@@ -23,5 +41,15 @@
 	<p>Fugiat sed exercitationem velit illo maiores accusantium! Fuga!</p>
 	<p>Error voluptates perferendis, dignissimos voluptatibus, tempore excepturi aliquam.</p>
 	<p>Similique ea dolor dolorum recusandae facilis culpa id.</p>
+	<button id="green">Pintar Verde</button>
+	<button id="red">Pintar Red</button>
+	<div id="enlaces">
+		<a href="http://educa.madrid.org">Educa</a><br>
+		<a href="http://www.google.es">Google</a><br>
+		<a href="http://www.yahoo.es">Yahoo</a><br>
+	</div>
+
+	<button id="numeraParrafo">Numera Parrafos</button>
+
 </body>
 </html>

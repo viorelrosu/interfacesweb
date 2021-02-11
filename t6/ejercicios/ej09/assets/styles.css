@@ -1,0 +1,85 @@
+img {
+	width: 600px;
+	height: 400px;
+	padding: 4px;
+	border: 1px solid #ccc;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button {
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.1em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:400;
+	color:#999;
+	text-align:center;
+	transition: all 0.2s;
+}
+
+button:hover {
+	color:#333;
+	background-color:#f2f2f2;
+}
+
+#slider-container {
+	width: 600px;
+}
+
+#slider-nav,
+#slider-auto {
+	text-align:center;
+	padding-top: 4px;
+}
+
+#slider-auto {
+	padding-top: 20px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -22px;
+  padding: 0 16px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+.prev{
+	border-radius: 3px 0px 0px 3px;
+}
+
+.next {
+	border-radius: 0px 3px 3px 0px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
