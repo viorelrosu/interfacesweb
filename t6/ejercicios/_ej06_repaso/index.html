@@ -84,6 +84,9 @@
 				}
 			})
 
+			var divRojo = $( "div#rojo" );
+
+
 			$( "#clickme" ).click(function() {
 			  $personaje.animate({
 			    opacity: 0.25,
@@ -93,31 +96,39 @@
 			    // Animation complete.
 			    alert('ya esta la animacion');
 			  });
+
+			  divRojo.animate({ left: "+=200" }, 1500 );
+			  divRojo.queue(function(){
+				$(this).css("color", "red");
+				divRojo.dequeue();
+				})
+			  divRojo.slideUp("slow",()=>alert('divRojo fuera'));
 			});
 
 			var div = $( "div#marco" );
- 
-			function runIt() {
-			  div
-			    .show( "slow" )
-			    .animate({ left: "+=200" }, 2000 )
-			    .slideToggle( 1000 )
-			    .slideToggle( "fast" )
-			    .animate({ left: "-=200" }, 1500 )
-			    .hide( "slow" )
-			    .show( 1200 )
-			    .slideUp( "normal", runIt );
-			}
-			 
-			function showIt() {
-			  var n = div.queue( "fx" );
-			  $( "span" ).text( n.length );
-			  setTimeout( showIt, 100 );
-			}
-			 
-			runIt();
-			showIt();
 
+			// function runIt() {
+			//   div
+			//     .show( "slow" )
+			//     .animate({ left: "+=200" }, 2000 )
+			//     .slideToggle( 1000 )
+			//     .slideToggle( "fast" )
+			//     .animate({ left: "-=200" }, 1500 )
+			//     .hide( "slow" )
+			//     .show( 1200 )
+			//     .slideUp( "normal", runIt );
+			// }
+
+			// function showIt() {
+			//   var n = div.queue( "fx" );
+			//   $( "span" ).text( n.length );
+			//   setTimeout( showIt, 100 );
+			// }
+
+			// runIt();
+			// showIt();
+
+			
 		});
 	</script>
 </head>
@@ -129,5 +140,6 @@
 	<div class="manzana"></div>
 	<button id="clickme">Click me </button>
 	<div id="marco" style="height: 50px; width: 50px; background-color: #ccc;border:1px solid #333;">&nbsp;</button>
+	<div id="rojo" style="position:absolute; height: 50px; width: 50px; background-color: red;border:1px solid #333;">&nbsp;</button>
 </body>
 </html>
