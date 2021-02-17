@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Ej 06</title>
+	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			position:relative;
+		}
+		.manzana {
+			background-image: url('assets/manzana.png');
+			background-size: 100%;
+			width: 30px;
+			height: 30px;
+			position:absolute;
+			top: 100px;
+			left: 150px;
+		}
+		.personaje {
+			width: 64px; height: 64px;
+			background-image: url(assets/personaje.png);
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+	</style>
+	<script type="text/javascript" src="assets/jquery-3.5.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var $manzana = $(".manzana");
+			var $personaje = $(".personaje");
+			var maxWidth = 1000; var maxHeight=500;
+			$manzana.css({
+				"left": Math.floor(Math.random()*(maxWidth)),
+				"top": Math.floor(Math.random()*(maxHeight)),
+			});
+
+			$personaje.css({
+				"left": Math.floor(Math.random()*(maxWidth)),
+				"top": Math.floor(Math.random()*(maxHeight)),
+			});
+
+			$(document).on("keydown",function(e){
+				switch(e.which) {
+					case 37:
+						//left
+						$personaje.css({
+							"left": "-=5px",
+							'background-position-y':'-64px',
+			        		'background-position-x':'+=64px',
+						});
+					break;
+					case 38:
+						//up
+						$personaje.css({
+							"top": "-=5px",
+							'background-position-y':'-192px',
+			        		'background-position-x':'+=64px',
+						});
+					break;
+					case 39:
+						//right
+						$personaje.css({
+							"left": "+=5px",
+							'background-position-y':'-128px',
+			        		'background-position-x':'+=64px',
+						});
+					break;
+					case 40:
+						//down
+						$personaje.css({
+							"top": "+=5px",
+							'background-position-y':'0px',
+			        		'background-position-x':'+=64px',
+						});
+					break;
+					default:
+						alert("utiliza las flechas del teclado");
+					break;
+				}
+			})
+
+			$( "#clickme" ).click(function() {
+			  $personaje.animate({
+			    opacity: 0.25,
+			    left: "+=50",
+			    height: "toggle"
+			  }, 5000, function() {
+			    // Animation complete.
+			    alert('ya esta la animacion');
+			  });
+			});
+
+			var div = $( "div#marco" );
+ 
+			function runIt() {
+			  div
+			    .show( "slow" )
+			    .animate({ left: "+=200" }, 2000 )
+			    .slideToggle( 1000 )
+			    .slideToggle( "fast" )
+			    .animate({ left: "-=200" }, 1500 )
+			    .hide( "slow" )
+			    .show( 1200 )
+			    .slideUp( "normal", runIt );
+			}
+			 
+			function showIt() {
+			  var n = div.queue( "fx" );
+			  $( "span" ).text( n.length );
+			  setTimeout( showIt, 100 );
+			}
+			 
+			runIt();
+			showIt();
+
+		});
+	</script>
+</head>
+
+<body>
+	<span class="badge badge-info">0</span>
+	<span class="badge badge-warning">0</span>
+	<div class="personaje" data-puntos="0"></div>
+	<div class="manzana"></div>
+	<button id="clickme">Click me </button>
+	<div id="marco" style="height: 50px; width: 50px; background-color: #ccc;border:1px solid #333;">&nbsp;</button>
+</body>
+</html>

@@ -61,14 +61,13 @@
 			  // strip the ms
 			  timeDiff /= 1000;
 
-			  // get seconds 
+			  // get seconds
 			  var seconds = Math.round(timeDiff);
 			  $("span.badge-warning").text(seconds);
 			  if(seconds > maxTime) {
 			  	clearInterval(myInterval);
 			  	alert("Lo siento, has perdido.");
 			  }
-			  
 			}
 
 			$("span.badge-info").text();

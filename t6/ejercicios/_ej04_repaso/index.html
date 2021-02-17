@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Ej 04</title>
+	<script type="text/javascript" src="../lib/jquery-3.5.1.min.js"></script>
+
+	<style>
+		.cuadrado {
+			width: 20px;
+			height: 20px;
+			border: 1px solid #ccc;
+			float:left;
+			margin: 10px;
+		}
+
+		#fondo {
+			position: relative;
+			width: 500px;
+			height: 500px;
+			background-color: #f1f1f1;
+		}
+
+		.tooltip {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 4px;
+			background-color: #ccc;
+			color: black;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".cuadrado").each(function(){
+				$(this).css("backgroundColor",$(this).data("color"));
+			})
+
+			$(".cuadrado").on("click",function(){
+				$("#fondo").css("backgroundColor",$(this).data("color"));
+			})
+
+			$(".cuadrado").hover(
+				function(e){
+					$(".tooltip").css({
+						"display":"block",
+						"left": e.pageX+5,
+						"top": e.pageY-5,
+						"background-color": $(this).data("color"),
+						"color": "#fff"
+					}).text($(this).data("color"));
+				},
+				function(e){
+					$(".tooltip").css("display","none");
+				}
+			)
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="fondo" class="">
+		<div class="cuadrado" data-color="blue"></div>
+		<div class="cuadrado" data-color="yellow"></div>
+		<div class="cuadrado" data-color="black"></div>
+		<div class="cuadrado" data-color="red"></div>
+	</div>
+
+	<div class="tooltip">tooltip</div>
+
+</body>
+</html>
