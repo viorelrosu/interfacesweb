@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/styles.css">
+	<script type="text/javascript" src="../lib/jquery-3.5.1.min.js" charset="utf-8" ></script>
+	<script type="text/javascript" src="../../jquery-ui/jquery-ui.js" charset="utf-8" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".contador").draggable({
+				start: function(event, ui){
+					//console.log("start a mover un div");
+					$(this).addClass("moviendo");
+				},
+				stop: function(event, ui) {
+					//console.log("se ha soltado un div");
+					$(this).removeClass("moviendo");
+					var n = $(this).data("movimientos");
+					n++;
+					$(this).data("movimientos", n);
+					$(this).text(n);
+				}
+			});
+			var elems=0;
+
+			$( ".contenedor-azul" ).droppable({
+		      drop: function( event, ui ) {
+		        $( this )
+		          .addClass( "ui-state-highlight" )
+		          .find( "p" )
+		            .html( "Dropped!" );
+
+		       var n = ui.draggable.data("movimientos")+1;
+		       elems++;
+		       $( this ).find("p").html(elems);
+		      },
+		      out: function( event, ui ) {
+		      	elems--;
+		      	$( this ).find("p").html(elems);
+		      }
+		    });
+		});
+	</script>
+</head>
+<body>
+	<div class="contador" data-movimientos="0">0</div>
+	<div class="contador" data-movimientos="0">0</div>
+	<div class="contador" data-movimientos="0">0</div>
+	<div class="contenedor-azul">
+		<p>asd</p>
+	</div>
+	
+</body>
+</html>
