@@ -9,6 +9,8 @@
 	<script type="text/javascript" src="../../jquery-ui/jquery-ui.js" charset="utf-8" ></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			posicionarCuadros();
+
 			$(".contador").draggable({
 				start: function(event, ui){
 					//console.log("start a mover un div");
@@ -23,9 +25,30 @@
 					$(this).text(n);
 				}
 			});
-			var elems=0;
+			var elemsAzul = 0; var elemsYellow=0;
 
-			$( ".contenedor-azul" ).droppable({
+			$( ".azul" ).droppable({
+		      drop: function( event, ui ) {
+		        $( this )
+		          .addClass( "ui-state-highlight" )
+		          .find( "p" )
+		            .html( "Dropped!" );
+
+		        if(ui.draggable.data("contado") == 0) {
+		        	var n = ui.draggable.data("movimientos")+1;
+		       		ui.draggable.data("contado",1);
+		       		//console.log(elemsAzul);
+		       		$( this ).find("p").html(elemsAzul);
+		        }
+		       		      	
+		      },
+		      out: function( event, ui ) {
+		      	elemsAzul--;
+		      	$( this ).find("p").html(elemsAzul);
+		      }
+		    });
+
+		    $( ".yellow" ).droppable({
 		      drop: function( event, ui ) {
 		        $( this )
 		          .addClass( "ui-state-highlight" )
@@ -33,23 +56,49 @@
 		            .html( "Dropped!" );
 
 		       var n = ui.draggable.data("movimientos")+1;
-		       elems++;
-		       $( this ).find("p").html(elems);
+		       elemsYellow++;
+		       $( this ).find("p").html(elemsYellow);
 		      },
 		      out: function( event, ui ) {
-		      	elems--;
-		      	$( this ).find("p").html(elems);
+		      	elemsYellow--;
+		      	$( this ).find("p").html(elemsYellow);
 		      }
 		    });
+
+		    function posicionarCuadros(){
+				$(".contador").each(function(){
+					$(this).css({
+						"top": getRandom(0, 200),
+						"left": getRandom(200, 1000),
+						"backgroundColor": getRandomColor()
+					});
+				})
+			}
+
+			function getRandom(min, max){
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			function getRandomColor(){
+				var array = new Array("blue","yellow");
+				return array[Math.floor(Math.random()*2)]
+			}
 		});
+
+		
 	</script>
 </head>
 <body>
-	<div class="contador" data-movimientos="0">0</div>
-	<div class="contador" data-movimientos="0">0</div>
-	<div class="contador" data-movimientos="0">0</div>
-	<div class="contenedor-azul">
-		<p>asd</p>
+	<div class="contador" data-movimientos="0" data-contado="0">0</div>
+	<div class="contador" data-movimientos="0" data-contado="0">0</div>
+	<div class="contador" data-movimientos="0" data-contado="0">0</div>
+	<div class="contador" data-movimientos="0" data-contado="0">0</div>
+	<div class="contador" data-movimientos="0" data-contado="0">0</div>
+	<div class="contenedor yellow">
+		<p>Yellow</p>
+	</div>
+	<div class="contenedor azul">
+		<p>Blue</p>
 	</div>
 	
 </body>
